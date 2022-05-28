@@ -1,5 +1,5 @@
 {
-  "name": "react-virtual-scroller",
+  "name": "@holmberd/react-virtual-scroller",
   "version": "1.0.0",
   "description": "React component for efficiently rendering lists with large number of elements.",
   "scripts": {
@@ -44,5 +44,12 @@
     "scrolling",
     "list",
     "table"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/holmberd/react-virtual-scroller.git"
+  },
+  "bugs": {
+    "url": "https://github.com/holmberd/react-virtual-scroller/issues"
+  }
 }
