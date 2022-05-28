@@ -1,0 +1,40 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [],
+  "rules": {
+    "no-unused-vars": 1,
+    "strict": 0,
+    "no-console": "off",
+    "indent": [
+      "error",
+      2,
+      {
+        "MemberExpression": "off",
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ]
+  }
+}

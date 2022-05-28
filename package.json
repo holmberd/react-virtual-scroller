@@ -1,0 +1,48 @@
+{
+  "name": "react-virtual-scroller",
+  "version": "1.0.0",
+  "description": "React component for efficiently rendering lists with large number of elements.",
+  "scripts": {
+    "build": "rm -rf ./dist && node ./esbuild.js && ls -l dist",
+    "start": "npm run build -- --servedir=dist",
+    "watch": "npm run build -- --watch"
+  },
+  "author": "Dag Holmberg (https://github.com/holmberd/)",
+  "license": "BSD-3-Clause",
+  "main": "dist/react-virtual-scroller.cjs.js",
+  "module": "dist/react-virtual-scroller.esm.js",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "sideEffects": false,
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@holmberd/virtual-scroller": "^1.2.0",
+    "prop-types": "^15.8.1"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.41",
+    "eslint": "^8.16.0",
+    "eslint-plugin-react": "^7.30.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "keywords": [
+    "react",
+    "virtual-scroller",
+    "virtual",
+    "virtualized",
+    "infinite",
+    "scrolling",
+    "list",
+    "table"
+  ]
+}
