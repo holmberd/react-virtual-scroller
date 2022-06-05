@@ -5,7 +5,7 @@
 
 import React, { useRef, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { VISIBLE_RANGE_CHANGE_EVENT, Virtualization } from '@holmberd/virtual-scroller';
+import { VISIBLE_RANGE_CHANGE_EVENT, Layout } from '@holmberd/virtual-scroller';
 
 VirtualScroller.propTypes = {
   children: PropTypes.element,
@@ -15,7 +15,7 @@ VirtualScroller.propTypes = {
   height: PropTypes.number.isRequired,
   getItemLength: PropTypes.func.isRequired,
   offsetVisibleIndex: PropTypes.number,
-  virtualization: PropTypes.oneOf(Object.values(Virtualization)),
+  layout: PropTypes.oneOf(Object.values(Layout)),
   enableResizeObserver: PropTypes.bool,
   disableVirtualization: PropTypes.bool,
   onVisibleRangeChange: PropTypes.func,
@@ -29,7 +29,7 @@ function VirtualScroller({
   height,
   getItemLength,
   offsetVisibleIndex = 0,
-  virtualization = Virtualization.VERTICAL,
+  layout = Layout.VERTICAL,
   enableResizeObserver = false,
   disableVirtualization = false,
   onVisibleRangeChange,
@@ -53,7 +53,7 @@ function VirtualScroller({
 
     listRef.current.enableResizeObserver = enableResizeObserver;
     listRef.current.init(React.Children.count(children), getItemLength, {
-      virtualization,
+      layout,
       enableResizeObserver,
       disableVirtualization,
       offsetVisibleIndex,
@@ -63,7 +63,7 @@ function VirtualScroller({
     children,
     getItemLength,
     enableResizeObserver,
-    virtualization,
+    layout,
     disableVirtualization,
     offsetVisibleIndex,
   ]);
