@@ -72,7 +72,7 @@ Callback function to calculate and return the length(height or width) of each it
 Number of extra items (overscan) to be rendered before/after the visible range.
 
 ### `layout = 'vertical'`
-Set whether to use `vertical` or `horizontal` virtualization.
+Set whether to use `vertical` or `horizontal` layout virtualization.
 
 ### `enableResizeObserver = false`
 Set wether to update visible item indexes on element resize.
