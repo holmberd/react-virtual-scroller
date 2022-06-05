@@ -1,6 +1,6 @@
 {
   "name": "@holmberd/react-virtual-scroller",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "React component for efficiently rendering lists with large number of elements.",
   "scripts": {
     "build": "rm -rf ./dist && node ./esbuild.js && ls -l dist",
