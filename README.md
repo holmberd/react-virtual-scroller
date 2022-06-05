@@ -60,25 +60,29 @@ export function VerticalList() {
 
 ## API
 
-### `width = 0`
+### Props
+
+#### `width = 0`
 Set the width of the VirtualScroller list.
 
-### `height = 0`
+#### `height = 0`
 Set the height of the VirtualScroller list.
 #### `getItemLength = (index: number) => number`
 Callback function to calculate and return the length(height or width) of each item by index.
 
-### `offsetVisibleIndex = 0`
+#### `offsetVisibleIndex = 0`
 Number of extra items (overscan) to be rendered before/after the visible range.
 
-### `layout = 'vertical'`
+#### `layout = 'vertical'`
 Set whether to use `vertical` or `horizontal` layout virtualization.
 
-### `enableResizeObserver = false`
+#### `enableResizeObserver = false`
 Set wether to update visible item indexes on element resize.
 
-### `disableVirtualization = false`
+#### `disableVirtualization = false`
 Set to disable virtualization (the `onVisibleRangeChange` callback will still be called).
+
+### Methods
 
 ### `resetOnIndex(index: number = 0, shouldUpdate: boolean = true): void`
 Rebuilds the items cached scrollOffset index on and after the specified index when called. Useful when the size of an item changes in your list, e.g. expanded/collapsed. By default calling this method will trigger an update, use `shouldUpdate` to override this behaviour.
