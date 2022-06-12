@@ -2,6 +2,8 @@
 
 `<VirtualScroller>` is a high performant React component that provides a way to render a large number of elements in a scrollable list without negatively affecting overall UI performance. It achives this by only rendering the elements that are currently visible in its "viewport" and virtualizes elements not currently visible.
 
+This component provides a React interface for interacting with our custom web component: [virtual-scroller](https://github.com/holmberd/virtual-scroller)
+
 ## Install
 
 The `<VirtualScroller>` web component can be installed from [NPM](https://npmjs.org):
